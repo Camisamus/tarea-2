@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Master.master.cs" Inherits="Master" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style4
+        {
+            height: 108px;
+            width: 941px;
+        }
+        .style7
+        {
+            width: 941px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+                <asp:Image ID="Image1" runat="server" Height="151px" 
+            ImageUrl="~/recursos/vaso-azul-con-sombra-alargada_398919.jpg" Width="1032px" />
+            </div>
+    <table class="style1">
+        <tr>
+            <td class="style3" colspan="2">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td class="style5">
+                <asp:Menu ID="Menu1" runat="server" BorderColor="Blue" BorderWidth="10px" 
+                    CssClass="dynamic" Font-Bold="True" Font-Names="Browallia New" 
+                    Font-Overline="True" Font-Size="XX-Large">
+                    <Items>
+                        <asp:MenuItem Text="Inicio" Value="Inicio" NavigateUrl="~/inicio.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Log in" Value="Log in" NavigateUrl="~/Login.aspx"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </td>
+            <td class="style4">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td class="style6">
+                &nbsp;</td>
+            <td class="style7">
+                &nbsp;</td>
+        </tr>
+    </table>
+    </form>
+    <p>
+        derechos de autor de Juan Fco Hervas 2014</p>
+</body>
+</html>
